@@ -11,9 +11,7 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-
 @app.route('/')
-
 def exibir_cotacoes():
     requisicao = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
     requisicao_dic = requisicao.json()
