@@ -1,6 +1,6 @@
 
 # Usa uma imagem oficial do Python com apt disponível
-FROM Python 3.13.2
+FROM python3.13.2
 
 # Instala dependências do sistema
 RUN apt-get update && apt-get install -y \
